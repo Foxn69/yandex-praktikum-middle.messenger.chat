@@ -1,4 +1,4 @@
 стэк проекта: TS, handlebars, SCSS, node, express
 сборщик: vite
-линты: ESlint, Stylelint, .editconfig
+линты: ESlint, Stylelint
 
