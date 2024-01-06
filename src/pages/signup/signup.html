@@ -1,0 +1,10 @@
+{{#> layouts/page title="Регистрация"}}
+    <div>
+      {{#> card/card}}
+        {{#each signup.inputs}}
+          {{> input/input type=this.type placeholder=this.placeholder name=this.name}}
+        {{/each}}
+        {{> button/button label="Зарегистрироваться"}}  
+      {{/card/card}}
+    </div>
+{{/ layouts/page}}

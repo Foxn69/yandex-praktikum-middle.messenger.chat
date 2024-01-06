@@ -6,10 +6,10 @@
   "semi": true,
   "quoteProps": "as-needed",
   "jsxSingleQuote": true,
-  "trailingComma": "all",
   "bracketSpacing": true,
   "arrowParens": "always",
   "endOfLine": "auto",
+  "trailingComma": "none",
   "overrides": [
     {
         "files": "**/*.hbs",

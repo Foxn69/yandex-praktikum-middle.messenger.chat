@@ -1,1 +1,12 @@
-<!-- {{#> }} -->
+{{#> layouts/page title="Вход"}}
+<div>
+  {{#> card/card}} 
+    {{#each login.inputs}}
+   {{> input/input type=this.type placeholder=this.placeholder name=this.name}}
+  {{/each}} 
+  {{> button/button label="Войти"}}  
+  {{/card/card}}
+</div>
+<a href="/src/pages/signup/signup.html">Зарегистрироваться</a>
+
+{{/ layouts/page}}
