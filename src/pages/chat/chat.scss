@@ -1,5 +1,71 @@
-.chatPage {
+.chat-page {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  height: 100%;
+}
+
+.side-bar {
+  display: grid;
+  grid-template-rows: 0.5fr 5fr;
+  border-right: 1px solid #eaeaea;
+}
+
+.header {
+  display: grid;
+  border-bottom: 1px solid #eaeaea;
+  align-items: center;
+}
+
+.profile-btn {
+  justify-self: end;
+}
+
+.search-block {
+  justify-self: center;
+}
+
+.list {
+}
+
+.chat {
+  display: grid;
+  height: 100%;
+  grid-template-rows: 1fr 7fr 0.5fr;
+  align-items: center;
+}
+
+.person {
+  border-bottom: 1px solid #eaeaea;
+}
+
+.messages {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    background-color: green;
+    height: 100%;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    border-bottom: 1px solid #eaeaea;
+
+}
+
+.person-messages {
+}
+
+.user-messages {
+}
+
+
+
+.messaging-panel {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    justify-items: center;
+}
+
+.attachment-btn {
+}
+
+.type-message {
+}
+
+.send-btn {
 }

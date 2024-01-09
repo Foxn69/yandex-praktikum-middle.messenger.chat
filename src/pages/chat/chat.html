@@ -1,7 +1,26 @@
 {{#> layouts/page title="Чат"}}
 <link rel="stylesheet" href="/src/pages/chat/chat.scss" />
-<div class="chatPage" ><div>1</div>
-<div>2</div>
-<div>3</div>
+<div class="chat-page">
+  <section class="side-bar">
+    <div class="header">
+      <div class="profile-btn">Профиль</div>
+      <div class="search-block">Поиск</div>
+    </div>
+    <div class="list">список чатов</div>
+  </section>
+
+  <section class="chat">
+    <div class="person">Иван</div>
+    <div class="messages">
+        <div class="person-messages" >Привет!</div>
+        <div class="user-messages">Привет, Иван!</div>
+    </div>
+    <div class="messaging-panel">
+        <div class="attachment-btn">Приложить</div>
+        <div class="message-input">Сообщение</div>
+        <div class="send-btn">Отправить</div>
+
+    </div>
+  </section>
 </div>
 {{/ layouts/page}}
