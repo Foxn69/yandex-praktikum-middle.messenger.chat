@@ -49,6 +49,22 @@ export default defineConfig({
               name: 'phone'
             }
           ]
+        },
+        chatList: {
+          chatItems: [
+            {
+              avatar: 'avatar',
+              name: 'Иван',
+              personMessage: 'Привет!',
+              userMessage: 'Привет, Иван!'
+            },
+            {
+              avatar: 'avatar',
+              name: 'Семен',
+              personMessage: 'тут?',
+              userMessage: ''
+            }
+          ]
         }
       }
     }) as unknown as Plugin

@@ -6,20 +6,22 @@
       <div class="profile-btn">Профиль</div>
       <div class="search-block">Поиск</div>
     </div>
-    <div class="list">список чатов</div>
+    <div class="list">
+      {{#each chatList.chatItems}} {{> chat-item/chat-item avatar=this.avatar name=this.name
+      personMessage=this.personMessage userMessage=this.userMessage}} {{/each}}
+    </div>
   </section>
 
   <section class="chat">
     <div class="person">Иван</div>
     <div class="messages">
-        <div class="person-messages" >Привет!</div>
-        <div class="user-messages">Привет, Иван!</div>
+      <div class="person-messages">Привет!</div>
+      <div class="user-messages">Привет, Иван!</div>
     </div>
     <div class="messaging-panel">
-        <div class="attachment-btn">Приложить</div>
-        <div class="message-input">Сообщение</div>
-        <div class="send-btn">Отправить</div>
-
+      <div class="attachment-btn">Приложить</div>
+      <div class="message-input">Сообщение</div>
+      <div class="send-btn">Отправить</div>
     </div>
   </section>
 </div>
