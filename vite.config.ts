@@ -65,6 +65,12 @@ export default defineConfig({
               userMessage: ''
             }
           ]
+        },
+        chosenChat: {
+          avatar: 'avatar',
+          personName: 'Иван',
+          personMessages: ['Привет!', 'Как дела?', 'Отлично'],
+          userMessages: ['Привет, Иван!', 'Хорошо', 'А у тебя?']
         }
       }
     }) as unknown as Plugin

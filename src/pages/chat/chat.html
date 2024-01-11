@@ -3,8 +3,8 @@
 <div class="chat-page">
   <section class="side-bar">
     <div class="header">
-      <div class="profile-btn">Профиль</div>
-      <div class="search-block">Поиск</div>
+      <div class="profile-btn">{{> button/button label="Профиль"}}</div>
+      <div class="search-block">{{> input/input type="text" name="search" placeholder="Поиск" }}</div>
     </div>
     <div class="list">
       {{#each chatList.chatItems}} {{> chat-item/chat-item avatar=this.avatar name=this.name
@@ -13,15 +13,15 @@
   </section>
 
   <section class="chat">
-    <div class="person">Иван</div>
+    <span class="person">{{> person-data/person-data avatar=chosenChat.avatar personName=chosenChat.personName}}</span>
     <div class="messages">
-      <div class="person-messages">Привет!</div>
-      <div class="user-messages">Привет, Иван!</div>
+      <div class="person-messages">{{#each chosenChat.personMessages}} {{>textarea/textarea message=this}} {{/each}}</div>
+      <div class="user-messages">{{#each chosenChat.userMessages}} {{>textarea/textarea message=this}} {{/each}}</div>
     </div>
     <div class="messaging-panel">
-      <div class="attachment-btn">Приложить</div>
-      <div class="message-input">Сообщение</div>
-      <div class="send-btn">Отправить</div>
+      <div class="attachment-btn">{{> button/button label="Прикрепить"}}</div>
+      <div class="message-input">{{> input/input type="text" name="userMessageInput" placeholder="Сообщение" }}</div>
+      <div class="send-btn">{{> button/button label="Отправить"}}</div>
     </div>
   </section>
 </div>
