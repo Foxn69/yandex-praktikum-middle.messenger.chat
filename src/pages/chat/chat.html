@@ -4,7 +4,7 @@
   <section class="side-bar">
     <div class="header">
       <div class="profile-btn">{{> button/button label="Профиль"}}</div>
-      <div class="search-block">{{> input/input type="text" name="search" placeholder="Поиск" }}</div>
+      <div class="search-block">{{> search/search class="search" type="text" name="search" placeholder="Поиск" }}</div>
     </div>
     <div class="list">
       {{#each chatList.chatItems}} {{> chat-item/chat-item avatar=this.avatar name=this.name
@@ -15,7 +15,9 @@
   <section class="chat">
     <span class="person">{{> person-data/person-data avatar=chosenChat.avatar personName=chosenChat.personName}}</span>
     <div class="messages">
-      <div class="person-messages">{{#each chosenChat.personMessages}} {{>textarea/textarea message=this}} {{/each}}</div>
+      <div class="person-messages">
+        {{#each chosenChat.personMessages}} {{>textarea/textarea message=this}} {{/each}}
+      </div>
       <div class="user-messages">{{#each chosenChat.userMessages}} {{>textarea/textarea message=this}} {{/each}}</div>
     </div>
     <div class="messaging-panel">

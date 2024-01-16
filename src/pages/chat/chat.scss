@@ -8,6 +8,8 @@
   display: grid;
   grid-template-rows: 0.5fr 5fr;
   border-right: 1px solid #eaeaea;
+  background-color: #fbfbfb;
+  padding: 0px 10px;
 }
 
 .header {
@@ -21,7 +23,7 @@
 }
 
 .search-block {
-  justify-self: center;
+  // justify-self: center;
 }
 
 .list {
@@ -39,12 +41,11 @@
 }
 
 .messages {
-    display: grid;
-    height: 100%;
-    grid-template-columns: auto auto;
-    justify-content: space-between;
-    border-bottom: 1px solid #eaeaea;
-
+  display: grid;
+  height: 100%;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  border-bottom: 1px solid #eaeaea;
 }
 
 .person-messages {
@@ -53,12 +54,10 @@
 .user-messages {
 }
 
-
-
 .messaging-panel {
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    justify-items: center;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  justify-items: center;
 }
 
 .attachment-btn {
