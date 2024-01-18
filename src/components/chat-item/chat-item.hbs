@@ -1,11 +1,24 @@
-<div>
+<link rel='stylesheet' href='/src/components/chat-item/chat-item.scss' />
+
+<div class='chat-item'>
   <section>
-  {{> avatar/avatar src='{{avatar}}' class='chat-list-item' }}
+  {{> avatar/avatar src='{{avatar}}' class='chat-list-item-avatar' }}
   </section>
   
-  <section>
-    <span>{{name}}</span>
-    <span>{{personMessage}}</span>
-    <span>Вы:&nbsp;{{userMessage}}</span>
+  <section class="lastMessages">
+    <span class="personName">{{name}}</span>
+      {{#if personMessage}}
+        <span>{{personMessage}}</span>
+      {{/if}}
+      {{#if userMessage}}
+        <span>Вы:&nbsp;{{userMessage}}</span>
+      {{/if}}
+  </section>
+
+  <section class="time-and-unreadCount">
+    <span>{{lastMessageTime}}</span>
+    {{#if unreadCount}}
+      <span class="numberCircle">{{unreadCount}}</span>
+     {{/if}}
   </section>
 </div>

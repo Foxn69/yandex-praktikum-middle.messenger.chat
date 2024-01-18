@@ -4,11 +4,6 @@ import handlebars from 'vite-plugin-handlebars';
 import { getPicturesPath } from './lib/utils/get-pictures-path';
 
 export default defineConfig({
-  // root: './',
-  // build: {
-  //   outDir: 'dist'
-  // },
-  // publicDir: 'public',
   plugins: [
     handlebars({
       partialDirectory: resolve('src/components'),
@@ -61,14 +56,15 @@ export default defineConfig({
             {
               avatar: getPicturesPath('mock-person-avatar-1.png'),
               name: 'Иван',
-              personMessage: 'Привет!',
-              userMessage: 'Привет, Иван!'
+              userMessage: 'Привет, Иван!',
+              lastMessageTime: '10:00'
             },
             {
               avatar: getPicturesPath('mock-person-avatar-2.png'),
               name: 'Семен',
               personMessage: 'тут?',
-              userMessage: ''
+              lastMessageTime: '9:45',
+              unreadCount: 2
             }
           ]
         },
@@ -80,5 +76,8 @@ export default defineConfig({
         }
       }
     }) as unknown as Plugin
-  ]
+  ],
+  server: {
+    open: '/src/pages/chat/chat.html'
+  }
 });
