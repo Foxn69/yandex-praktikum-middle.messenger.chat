@@ -31,7 +31,7 @@
 .chat {
   display: grid;
   height: 100%;
-  grid-template-rows: 1fr 7fr 0.5fr;
+  grid-template-rows: 0.8fr 7fr 0.5fr;
   align-items: center;
 }
 
@@ -47,10 +47,8 @@
   border-bottom: 1px solid #eaeaea;
 }
 
-.person-messages {
-}
-
-.user-messages {
+.messages-column {
+  display: grid;
 }
 
 .messaging-panel {

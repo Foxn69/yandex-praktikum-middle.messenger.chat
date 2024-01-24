@@ -69,10 +69,10 @@ export default defineConfig({
           ]
         },
         chosenChat: {
-          avatar: 'avatar',
+          avatar: getPicturesPath('mock-person-avatar-1.png'),
           personName: 'Иван',
           personMessages: ['Привет!', 'Как дела?', 'Отлично'],
-          userMessages: ['Привет, Иван!', 'Хорошо', 'А у тебя?']
+          userMessages: ['Привет, Иван!', 'Хороооооооооооошо', 'А у тебя?']
         }
       }
     }) as unknown as Plugin

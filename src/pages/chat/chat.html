@@ -13,12 +13,12 @@
   </section>
 
   <section class="chat">
-    <span class="person">{{> person-data/person-data avatar=chosenChat.avatar personName=chosenChat.personName}}</span>
+    <div class="person">{{> person-data/person-data avatar=chosenChat.avatar personName=chosenChat.personName}}</div>
     <div class="messages">
-      <div class="person-messages">
+      <div class="messages-column">
         {{#each chosenChat.personMessages}} {{>textarea/textarea message=this}} {{/each}}
       </div>
-      <div class="user-messages">{{#each chosenChat.userMessages}} {{>textarea/textarea message=this}} {{/each}}</div>
+      <div class="messages-column">{{#each chosenChat.userMessages}} {{>textarea/textarea message=this}} {{/each}}</div>
     </div>
     <div class="messaging-panel">
       <div class="attachment-btn">{{> button/button label="Прикрепить"}}</div>
