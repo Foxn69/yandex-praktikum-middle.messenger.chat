@@ -1,3 +1,3 @@
 import { PICTURE_PATH } from '../constants';
 
-export const getPicturesPath = (pictureName: string): string => `${PICTURE_PATH}/${pictureName}`;
+export const getPicturePath = (pictureName: string): string => `${PICTURE_PATH}/${pictureName}`;

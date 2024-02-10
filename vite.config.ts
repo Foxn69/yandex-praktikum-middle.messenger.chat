@@ -1,7 +1,7 @@
 import { defineConfig, type Plugin } from 'vite';
 import { resolve } from 'path';
 import handlebars from 'vite-plugin-handlebars';
-import { getPicturesPath } from './lib/utils/get-pictures-path';
+import { getPicturePath } from './lib/utils/get-pictures-path';
 
 export default defineConfig({
   plugins: [
@@ -54,13 +54,13 @@ export default defineConfig({
         chatList: {
           chatItems: [
             {
-              avatar: getPicturesPath('mock-person-avatar-1.png'),
+              avatar: getPicturePath('mock-person-avatar-1.png'),
               name: 'Иван',
               userMessage: 'Привет, Иван!',
               lastMessageTime: '10:00'
             },
             {
-              avatar: getPicturesPath('mock-person-avatar-2.png'),
+              avatar: getPicturePath('mock-person-avatar-2.png'),
               name: 'Семен',
               personMessage: 'тут?',
               lastMessageTime: '9:45',
@@ -69,7 +69,7 @@ export default defineConfig({
           ]
         },
         chosenChat: {
-          avatar: getPicturesPath('mock-person-avatar-1.png'),
+          avatar: getPicturePath('mock-person-avatar-1.png'),
           personName: 'Иван',
           personMessages: ['Привет!', 'Как дела?', 'Отлично'],
           userMessages: ['Привет, Иван!', 'Хороооооооооооошо', 'А у тебя?']

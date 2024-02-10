@@ -1,3 +1,26 @@
-.input {
-  background-color: green;
+//default
+input {
+  // background-color: red;
+}
+
+.input-message {
+  border-radius: 5px;
+  background-color: #efefef;
+  border: none;
+  height: 32px;
+  width: 100%;
+  padding-left: 10px;
+  box-sizing: border-box;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 12px;
+  font-family: 'FontAwesome';
+  &::placeholder {
+    text-align: center;
+    color: #999;
+  }
+  &:focus {
+    outline: none;
+  }
 }

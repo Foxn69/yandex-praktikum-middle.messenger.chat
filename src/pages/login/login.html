@@ -1,9 +1,15 @@
 {{#> layouts/page title="Вход"}}
 <link rel="stylesheet" href="/src/pages/login/login.scss" />
-<div class="testClass">
-  {{#> card/card}} {{#each login.inputs}} {{> input/input type=this.type placeholder=this.placeholder name=this.name}}
-  {{/each}} {{> button/button label="Войти"}} {{/card/card}}
-</div>
-<a href="/src/pages/signup/signup.html">Зарегистрироваться</a>
+<form class="login">
+  {{#> card/card  class="login-card-wrapping"}}
+
+    {{#> card/card  class="login-card"}}
+      {{#each login.inputs}} {{> input/input type=this.type placeholder=this.placeholder name=this.name}}
+      {{/each}} 
+   {{> button/button label="Войти"}}
+   <a href="/src/pages/signup/signup.html">Зарегистрироваться</a>
+   {{/card/card}} 
+  {{/card/card}}
+</form>
 
 {{/ layouts/page}}

@@ -1,10 +1,14 @@
 {{#> layouts/page title="Регистрация"}}
-    <div>
-      {{#> card/card}}
-        {{#each signup.inputs}}
-          {{> input/input type=this.type placeholder=this.placeholder name=this.name}}
-        {{/each}}
-        {{> button/button label="Зарегистрироваться"}}  
+<link rel="stylesheet" href="/src/pages/signup/signup.scss" />
+    <form name="signup" class="signup">
+      {{#> card/card class="signup-card-wrapping"}}
+          {{#> card/card  class="signup-card"}}
+          {{#each signup.inputs}}
+            {{> input/input type=this.type placeholder=this.placeholder name=this.name}}
+          {{/each}}
+          {{> button/button label="Зарегистрироваться"}}
+          <a href="/src/pages/login/login.html">назад</a>
+         {{/card/card}} 
       {{/card/card}}
-    </div>
+    </form>
 {{/ layouts/page}}
