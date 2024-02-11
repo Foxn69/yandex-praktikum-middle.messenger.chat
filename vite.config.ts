@@ -73,6 +73,15 @@ export default defineConfig({
           personName: 'Иван',
           personMessages: ['Привет!', 'Как дела?', 'Отлично'],
           userMessages: ['Привет, Иван!', 'Хороооооооооооошо', 'А у тебя?']
+        },
+        user: {
+          avatar: getPicturePath('mock-user-avatar.png'),
+          email: 'nik@mail.com',
+          login: 'Nik777',
+          name: 'Никита',
+          surname: 'Белый',
+          nickname: 'Nik',
+          phone: '+7 (999) 999-99-99'
         }
       }
     }) as unknown as Plugin

@@ -1,0 +1,33 @@
+.profile-page {
+  display: grid;
+  grid-template-columns: 0.5fr 6fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.profile-data {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  align-items: center;
+}
+
+.avatar-name {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+}
+
+.personal-data {
+  & > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 400px;
+    & > span:nth-child(2) {
+      // ваши стили для второго дочернего элемента div с классом personal-data
+      color: #999;
+    }
+  }
+}
+
+.profile-actions {
+}
