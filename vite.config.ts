@@ -87,6 +87,6 @@ export default defineConfig({
     }) as unknown as Plugin
   ],
   server: {
-    open: '/src/pages/chat/chat.html'
+    open: '/src/index.html'
   }
 });
