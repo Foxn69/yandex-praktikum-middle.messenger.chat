@@ -2,3 +2,4 @@
 сборщик: vite
 линты: ESlint, Stylelint
 
+.
