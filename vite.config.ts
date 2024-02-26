@@ -87,6 +87,6 @@ export default defineConfig({
     }) as unknown as Plugin
   ],
   server: {
-    open: '/src/index.html'
+    open: '/src/pages/login/login.html'
   }
 });
