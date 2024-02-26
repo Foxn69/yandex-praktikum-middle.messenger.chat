@@ -1,0 +1,27 @@
+{{#> layouts/page title="Профиль"}}
+<link rel="stylesheet" href="/src/pages/profile/profile.scss" />
+<div class="profile-page">
+  <a class="chat-btn" href="/src/pages/chat/chat.html">Чат</a>
+  <div class="profile-data">
+    <div class="avatar-name">
+      {{> avatar/avatar avatar=user.avatar class='big-size' }}
+      <div>Никита</div>
+    </div>
+
+    <div class="personal-data">
+      <div>{{> span/span text='Почта'}} {{> span/span text=user.email}}</div>
+      <div>{{> span/span text='Логин'}} {{> span/span text=user.login}}</div>
+      <div>{{> span/span text='Имя'}} {{> span/span text=user.name}}</div>
+      <div>{{> span/span text='Фамилия'}} {{> span/span text=user.surname}}</div>
+      <div>{{> span/span text='Имя в чате'}} {{> span/span text=user.nickname}}</div>
+      <div>{{> span/span text='Телефон'}} {{> span/span text=user.phone}}</div>
+    </div>
+
+    <div class="profile-actions">
+      <div>Изменить данные</div>
+      <div>Изменить пароль</div>
+      <div>Выйти</div>
+    </div>
+  </div>
+</div>
+{{/ layouts/page}}

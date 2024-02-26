@@ -1,0 +1,13 @@
+{{#> layouts/page title="Вход"}}
+<link rel="stylesheet" href="/src/pages/login/login.scss" />
+<form class="login">
+  {{#> card/card  class="login-card-wrapping"}}
+    {{#> card/card  class="login-card"}}
+      {{#each login.inputs}} {{> input/input type=this.type placeholder=this.placeholder name=this.name}}
+      {{/each}} 
+   <a href="/src/pages/chat/chat.html">Войти</a>
+   <a href="/src/pages/signup/signup.html">Зарегистрироваться</a>
+   {{/card/card}} 
+  {{/card/card}}
+</form>
+{{/ layouts/page}}

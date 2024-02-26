@@ -1,0 +1,82 @@
+.chat-page {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  height: 100%;
+}
+
+.side-bar {
+  display: grid;
+  grid-template-rows: 0.5fr 5fr;
+  border-right: 1px solid #eaeaea;
+  background-color: #fbfbfb;
+  padding: 0px 10px;
+}
+
+.header {
+  display: grid;
+  border-bottom: 1px solid #eaeaea;
+  align-items: center;
+}
+
+.profile-btn {
+  justify-self: end;
+  text-decoration: none;
+  background-color: #fbfbfb;
+  border: transparent;
+  cursor: pointer;
+  color: #999;
+  text-align: right;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 12px;
+}
+
+.search-block {
+}
+
+.list {
+}
+
+.chat {
+  display: grid;
+  height: 100%;
+  grid-template-rows: 0.8fr 7fr 0.5fr;
+  align-items: center;
+}
+
+.person {
+  border-bottom: 1px solid #eaeaea;
+}
+
+.messages {
+  display: grid;
+  height: 100%;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.messages-column {
+  display: grid;
+}
+
+.messaging-panel {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.attachment-btn {
+}
+
+.message-input {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-items: center;
+}
+
+.send-btn {
+}
