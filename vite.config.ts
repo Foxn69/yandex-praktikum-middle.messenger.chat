@@ -88,5 +88,10 @@ export default defineConfig({
   ],
   server: {
     open: '/src/pages/login/login.html'
-  }
+  },
+  build: {
+    rollupOptions: {
+        input: './src/index.html'
+    }
+}
 });
