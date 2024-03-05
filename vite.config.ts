@@ -91,7 +91,15 @@ export default defineConfig({
   },
   build: {
     rollupOptions: {
-        input: './src/index.html'
+      input: [
+        './src/index.html',
+        './src/pages/login/login.html',
+        './src/pages/signup/signup.html',
+        './src/pages/chat/chat.html',
+        './src/pages/profile/profile.html',
+        './src/pages/500/500.html',
+        './src/pages/400/400.html'
+      ],
     }
 }
 });
