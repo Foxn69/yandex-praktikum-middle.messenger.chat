@@ -86,19 +86,12 @@ export default defineConfig({
       }
     }) as unknown as Plugin
   ],
-  root: resolve(__dirname, "src"),
   server: {
     open: '/src/pages/login/login.html'
   },
   build: {
     rollupOptions: {
-        input: './src/index.html',
-        output:
-            {
-                format: 'es',
-                strict: false,
-                dir: 'dist/',
-            }
+        input: './src/index.html'
     }
 }
 });
