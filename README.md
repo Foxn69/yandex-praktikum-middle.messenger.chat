@@ -30,4 +30,3 @@ https://main--harmonious-puppy-d2933c.netlify.app/
 2. билд: npm run build
 
 3. запуск: npm run start
-.
