@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "lint": "stylelint \"**/*.scss\"",
     "start": "npm run build && node server/server.js",
     "build": "vite build",
     "preview": "vite preview"

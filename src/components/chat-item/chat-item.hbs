@@ -5,8 +5,8 @@
   {{> avatar/avatar src='{{avatar}}' class='chat-list-item-avatar' }}
   </section>
   
-  <section class="lastMessages">
-    <span class="personName">{{name}}</span>
+  <section class="last-messages">
+    <span class="person-name">{{name}}</span>
       {{#if personMessage}}
         <span>{{personMessage}}</span>
       {{/if}}
@@ -15,10 +15,10 @@
       {{/if}}
   </section>
 
-  <section class="time-and-unreadCount">
+  <section class="time-and-unread-count">
     <span>{{lastMessageTime}}</span>
     {{#if unreadCount}}
-      <span class="numberCircle">{{unreadCount}}</span>
+      <span class="number-circle">{{unreadCount}}</span>
      {{/if}}
   </section>
 </div>
