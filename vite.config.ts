@@ -99,7 +99,7 @@ export default defineConfig({
         './src/pages/profile/profile.html',
         './src/pages/500/500.html',
         './src/pages/400/400.html'
-      ],
+      ]
     }
-}
+  }
 });
