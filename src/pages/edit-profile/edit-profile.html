@@ -1,0 +1,24 @@
+{{#> layouts/page title="Изменить данные профиля"}}
+<link rel="stylesheet" href="/src/pages/edit-profile/edit-profile.scss" />
+<div class="profile-page">
+  <a class="chat-btn" href="/src/pages/profile/profile.html">В профиль</a>
+  <div class="profile-data">
+    <div class="avatar-name">
+      {{> avatar/avatar avatar=user.avatar class='big-size' }}
+      {{> buttons/button-text label='Изменить аватар' }}
+    </div>
+
+    <form class="personal-data">
+      {{> input/input type='email' placeholder=user.email name='email'}}
+      {{> input/input type='text' placeholder=user.login  name='login'}}
+      {{> input/input type='password' placeholder=user.oldPassword  name='oldPassword'}}
+      {{> input/input type='password' placeholder=user.newPassword  name='newPassword'}}
+      {{> input/input type='text' placeholder=user.name  name='first_name'}}
+      {{> input/input type='text' placeholder=user.surname  name='second_name'}}
+      {{> input/input type='text' placeholder=user.nickname  name='display_name'}}
+      {{> input/input type='text' placeholder=user.phone  name='phone'}}
+    </div>
+
+  </div>
+</div>
+{{/ layouts/page}}

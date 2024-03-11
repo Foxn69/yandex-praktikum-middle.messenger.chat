@@ -81,7 +81,9 @@ export default defineConfig({
           name: 'Никита',
           surname: 'Белый',
           nickname: 'Nik',
-          phone: '+7 (999) 999-99-99'
+          phone: '+7 (999) 999-99-99',
+          oldPassword: '123',
+          newPassword: '123'
         }
       }
     }) as unknown as Plugin
@@ -97,6 +99,7 @@ export default defineConfig({
         './src/pages/signup/signup.html',
         './src/pages/chat/chat.html',
         './src/pages/profile/profile.html',
+        './src/pages/edit-profile/edit-profile.html',
         './src/pages/500/500.html',
         './src/pages/400/400.html'
       ]
