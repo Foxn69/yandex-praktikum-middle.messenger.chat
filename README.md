@@ -19,9 +19,11 @@ https://deploy--harmonious-puppy-d2933c.netlify.app/
 
 4. профиль: https://deploy--harmonious-puppy-d2933c.netlify.app/src/pages/profile/profile
 
-5. 500: https://deploy--harmonious-puppy-d2933c.netlify.app/src/pages/500/500
+5. профиль: https://deploy--harmonious-puppy-d2933c.netlify.app/src/pages/edit-profile/edit-profile
 
-6. 400: https://deploy--harmonious-puppy-d2933c.netlify.app/src/pages/400/400
+6. 500: https://deploy--harmonious-puppy-d2933c.netlify.app/src/pages/500/500
+
+7. 400: https://deploy--harmonious-puppy-d2933c.netlify.app/src/pages/400/400
 
 Команды:
 
