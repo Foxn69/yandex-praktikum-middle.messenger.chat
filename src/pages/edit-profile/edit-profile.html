@@ -1,0 +1,24 @@
+{{#> layouts/page title="Изменить данные профиля"}}
+<link rel="stylesheet" href="/src/pages/edit-profile/edit-profile.scss" />
+<div class="profile-page">
+  <a class="chat-btn" href="/src/pages/profile/profile.html">В профиль</a>
+  <div class="profile-data">
+    <div class="avatar-name">
+      {{> avatar/avatar avatar=user.avatar class='big-size' }}
+      {{> buttons/button-text label='Изменить аватар' }}
+    </div>
+
+    <form class="personal-data">
+      <div>{{> span/span text='Почта'}} {{> input/input type='email' placeholder=user.email name='email'}}</div>
+      <div>{{> span/span text='Логин'}} {{> input/input type='text' placeholder=user.login  name='login'}}</div>
+      <div>{{> span/span text='Старый пароль'}} {{> input/input type='password' placeholder=user.oldPassword  name='oldPassword'}}</div>
+      <div>{{> span/span text='Новый пароль'}}{{> input/input type='password' placeholder=user.newPassword  name='newPassword'}}</div>
+      <div>{{> span/span text='Имя'}} {{> input/input type='text' placeholder=user.name  name='first_name'}}</div>
+      <div>{{> span/span text='Фамилия'}} {{> input/input type='text' placeholder=user.surname  name='second_name'}}</div>
+      <div>{{> span/span text='Имя в чате'}} {{> input/input type='text' placeholder=user.nickname  name='display_name'}}</div>
+      <div>{{> span/span text='Телефон'}} {{> input/input type='text' placeholder=user.phone  name='phone'}}</div>
+    </form>
+
+  </div>
+</div>
+{{/ layouts/page}}

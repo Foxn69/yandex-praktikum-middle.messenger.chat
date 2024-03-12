@@ -10,11 +10,13 @@
   font-style: normal;
   font-weight: 500;
   line-height: 12px;
-  font-family: 'FontAwesome';
+  font-family: FontAwesome, sans-serif;
+  
   &::placeholder {
     text-align: center;
     color: #999;
   }
+
   &:focus {
     outline: none;
   }
