@@ -1,3 +1,5 @@
+@use "/src/global";
+
 .profile-page {
   display: grid;
   grid-template-columns: 0.5fr 6fr;
@@ -39,7 +41,7 @@
     gap: 400px;
 
     & > span:nth-child(2) {
-      color: #999;
+      color: global.$light-grey;
     }
   }
 }
