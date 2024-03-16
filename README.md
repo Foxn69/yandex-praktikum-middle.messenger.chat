@@ -25,6 +25,8 @@ https://deploy--harmonious-puppy-d2933c.netlify.app/
 
 7. 400: https://deploy--harmonious-puppy-d2933c.netlify.app/src/pages/400/400
 
+8. навигация: https://deploy--harmonious-puppy-d2933c.netlify.app/src/index.html
+
 Команды:
 
 1. установка: npm install

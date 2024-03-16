@@ -1,21 +1,15 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="global.scss" />
-    <title>Title</title>
-  </head>
-  <body>
-    <div id="content">
-      <div class="main">
-        <a href="/src/pages/login/login.html" class="page-link">Login</a>
-        <a href="/src/pages/signup/signup.html" class="page-link">Sign up</a>
-        <a href="/src/pages/chat/chat.html" class="page-link">Чат</a>
-        <a href="/src/pages/profile/profile.html" class="page-link">Профиль</a>
-        <a href="/src/pages/edit-profile/edit-profile.html" class="page-link">Изменение профиля</a>
-        <a href="/src/pages/500/500.html" class="page-link">Страница 500</a>
-        <a href="/src/pages/400/400.html" class="page-link">Страница 400</a>
-      </div>
+{{#> layouts/page title="навигация"}}
+<link rel="stylesheet" href="/src/global.scss" />
+<div id="content">
+      <nav class="nav">
+       <li><a href="/src/pages/login/login.html" class="page-link">Login</li>
+        <li><a href="/src/pages/signup/signup.html" class="page-link">Sign up</li>
+        <li><a href="/src/pages/chat/chat.html" class="page-link">Чат</li>
+        <li><a href="/src/pages/profile/profile.html" class="page-link">Профиль</li>
+        <li><a href="/src/pages/edit-profile/edit-profile.html" class="page-link">Изменение профиля</li>
+        <li><a href="/src/pages/500/500.html" class="page-link">Страница 500</li>
+        <li><a href="/src/pages/400/400.html" class="page-link">Страница 400</li>
+      </nav>
     </div>
-  </body>
-</html>
+      {{/ layouts/page}}
+
