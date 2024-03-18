@@ -1,0 +1,19 @@
+.person-chat-header {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px 10px;
+}
+
+.person-data {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+}
+
+.dots-menu {
+  font-size: 20px;
+}

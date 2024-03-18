@@ -1,0 +1,31 @@
+{{#> layouts/page title="Чат"}}
+<link rel="stylesheet" href="/src/pages/chat/chat.scss" />
+<div class="chat-page">
+  <section class="side-bar">
+    <div class="header">
+      <a class="profile-btn" href="/src/pages/profile/profile.html">Профиль</a>
+
+      <div class="search-block">{{> search/search class="search" type="text" name="search" placeholder="Поиск" }}</div>
+    </div>
+    <div class="list">
+      {{#each chatList.chatItems}} {{> chat-item/chat-item avatar=this.avatar name=this.name
+      personMessage=this.personMessage userMessage=this.userMessage}} {{/each}}
+    </div>
+  </section>
+
+  <section class="chat">
+    <div class="person">{{> person-data/person-data avatar=chosenChat.avatar personName=chosenChat.personName}}</div>
+    <div class="messages">
+      <div class="messages-column">
+        {{#each chosenChat.personMessages}} {{>textarea/textarea message=this}} {{/each}}
+      </div>
+      <div class="messages-column">{{#each chosenChat.userMessages}} {{>textarea/textarea message=this}} {{/each}}</div>
+    </div>
+    <div class="messaging-panel">
+      {{> buttons/button-img src="/public/icons/attachment-icon.svg" alt="Прикрепить"}} {{> input/input type="text"
+      name="userMessageInput" class="input-message" placeholder="Сообщение" }} {{> buttons/button-img
+      src="/public/icons/send-icon.png" alt="Отправить"}}
+    </div>
+  </section>
+</div>
+{{/ layouts/page}}
